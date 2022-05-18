@@ -13,6 +13,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.SongsViewHolder>{
 
     private String[] data;
     public Adapter(String[] data){
+
         this.data = data;
     }
 
@@ -35,7 +36,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.SongsViewHolder>{
         return data.length;
     }
 
-    public static class  SongsViewHolder extends RecyclerView.ViewHolder {
+    public class SongsViewHolder extends RecyclerView.ViewHolder {
 
         TextView title;
         ImageView album;

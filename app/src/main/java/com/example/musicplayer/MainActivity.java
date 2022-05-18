@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         runtimePermission();
         RecyclerView songList = findViewById(R.id.songLIst);
         songList.setLayoutManager(new LinearLayoutManager(this));
+        String[] alphabets = {"A", "B", "C", "D", "E", "F","G", "H","I","J","K","L","M","N"};
+        songList.setAdapter(new Adapter(alphabets));
     }
 
     public void runtimePermission() {
